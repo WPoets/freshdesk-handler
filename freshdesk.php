@@ -6,7 +6,7 @@ namespace aw2\freshdesk;
 
 \aw2_library::add_service('freshdesk_api.call','returns the login URL for linkedin',['func'=>'_call','namespace'=>__NAMESPACE__]);
 
-function _call($atts,$content=null,$shortcode){
+function _call($atts,$content=null,$shortcode=null){
 	if(\aw2_library::pre_actions('all',$atts,$content)==false)return;
 
 	extract(\aw2_library::shortcode_atts( array(
